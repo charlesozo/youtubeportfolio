@@ -1,10 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
-import Title from '../layouts/Title'
-import { testimonialOne,testimonialTwo, quote } from "../../assets";
-
+import Title from "../layouts/Title";
+import { testimonialOne, testimonialTwo, quote } from "../../assets";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -31,62 +30,62 @@ function SamplePrevArrow(props) {
 }
 
 const Testimonial = () => {
-      const [dotActive, setDocActive] = useState(0);
-     const settings = {
-       dots: true,
-       infinite: true,
-       speed: 500,
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       nextArrow:<SampleNextArrow />,
-       prevArrow:<SamplePrevArrow />,
-       beforeChange: (prev, next) => {
-         setDocActive(next);
-       },
-       appendDots: (dots) => (
-         <div
-           style={{
-             borderRadius: "10px",
-             padding: "10px",
-           }}
-         >
-           <ul
-             style={{
-               display: "flex",
-               gap: "15px",
-               justifyContent: "center",
-               marginTop: "20px",
-             }}
-           >
-             {" "}
-             {dots}{" "}
-           </ul>
-         </div>
-       ),
-       customPaging: (i) => (
-         <div
-           style={
-             i === dotActive
-               ? {
-                   width: "12px",
-                   height: "12px",
-                   color: "blue",
-                   background: "#ff014f",
-                   borderRadius: "50%",
-                   cursor: "pointer",
-                 }
-               : {
-                   width: "12px",
-                   height: "12px",
-                   color: "blue",
-                   background: "gray",
-                   borderRadius: "50%",
-                   cursor: "pointer",
-                 }
-           }
-         ></div>
-       ),
-     };
+  const [dotActive, setDocActive] = useState(0);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    beforeChange: (prev, next) => {
+      setDocActive(next);
+    },
+    appendDots: (dots) => (
+      <div
+        style={{
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul
+          style={{
+            display: "flex",
+            gap: "15px",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          {" "}
+          {dots}{" "}
+        </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div
+        style={
+          i === dotActive
+            ? {
+                width: "12px",
+                height: "12px",
+                color: "blue",
+                background: "#ff014f",
+                borderRadius: "50%",
+                cursor: "pointer",
+              }
+            : {
+                width: "12px",
+                height: "12px",
+                color: "blue",
+                background: "gray",
+                borderRadius: "50%",
+                cursor: "pointer",
+              }
+        }
+      ></div>
+    ),
+  };
   return (
     <section
       id="testimonial"
@@ -137,11 +136,12 @@ const Testimonial = () => {
                     </div>
                   </div>
                   <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                    dolorum, eos natus ipsum numquam veniam officia
-                    necessitatibus ratione quos debitis exercitationem
-                    repudiandae facilis id neque nihil accusantium perspiciatis
-                    repellat? Iste.
+                    Absolutely thrilled with the software services provided!
+                    Their team's expertise and dedication brought our vision to
+                    life. The end result exceeded our expectations, and we're
+                    now equipped with a cutting-edge solution that has
+                    streamlined our operations and delighted our customers.
+                    Highly recommended!
                   </p>
                 </div>
               </div>
@@ -188,11 +188,12 @@ const Testimonial = () => {
                     </div>
                   </div>
                   <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                    dolorum, eos natus ipsum numquam veniam officia
-                    necessitatibus ratione quos debitis exercitationem
-                    repudiandae facilis id neque nihil accusantium perspiciatis
-                    repellat? Iste.
+                    Working with this software company has been an exceptional
+                    experience. Their attention to detail and thorough
+                    understanding of our requirements were evident from the
+                    start. They delivered a flawless web application that has
+                    significantly improved our efficiency. Fantastic
+                    communication and top-notch service throughout the project.
                   </p>
                 </div>
               </div>
@@ -239,11 +240,12 @@ const Testimonial = () => {
                     </div>
                   </div>
                   <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                    dolorum, eos natus ipsum numquam veniam officia
-                    necessitatibus ratione quos debitis exercitationem
-                    repudiandae facilis id neque nihil accusantium perspiciatis
-                    repellat? Iste.
+                    Outstanding job on our mobile app development! The user
+                    interface is sleek and intuitive, making it a breeze for our
+                    customers to navigate. Their team was receptive to our ideas
+                    and provided valuable insights, resulting in a product that
+                    stands out in the market. We couldn't be happier with the
+                    outcome!
                   </p>
                 </div>
               </div>
@@ -253,6 +255,6 @@ const Testimonial = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Testimonial
+export default Testimonial;

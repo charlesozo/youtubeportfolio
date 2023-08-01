@@ -11,53 +11,59 @@ const Achievement = () => {
     >
       <div>
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
+          <p className="text-sm text-designColor tracking-[4px]">2007 - 2022</p>
           <h2 className="text-4xl font-bold">Company Experience</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Cross-Platform Compatibility"
+            subTitle="Ensuring Consistent User Experience Across Devices"
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Implemented Responsive Design
+            To address cross-platform compatibility, I employed responsive design techniques, ensuring that our web applications rendered flawlessly on various devices and screen sizes. By maintaining a consistent user experience, we increased user satisfaction and engagement."
           />
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="High Server Costs"
+            subTitle="Reducing Infrastructure Expenses"
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Utilized Cloud Services and Server Optimization
+            To lower server costs, I migrated certain services to cloud-based solutions, optimizing resources as needed. Additionally, I applied server optimization techniques, such as compressing files and implementing server-side caching, resulting in significant cost savings while maintaining performance."
           />
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Continuous Deployment"
+            subTitle="Streamlining Deployment Process for Faster Releases"
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Implemented CI/CD Pipelines
+            To streamline the deployment process and achieve faster releases, I set up Continuous Integration and Continuous Deployment (CI/CD) pipelines. These automated pipelines enabled efficient code testing, integration, and deployment to production environments. By reducing manual intervention and ensuring quicker feedback loops, we accelerated the delivery of new features and bug fixes to end-users."
           />
         </div>
       </div>
       <div>
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
+          <p className="text-sm text-designColor tracking-[4px]">2007 - 2022</p>
           <h2 className="text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Scalability and Performance"
+            subTitle="Handling Surging Traffic During Product Launch."
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Implemented Load Balancing and Caching
+            To cope with the massive influx of users during the product launch, I set up load balancing across multiple servers to distribute the incoming traffic evenly. Additionally, I implemented caching strategies to reduce database queries and improve response times, ensuring a smooth user experience even during peak traffic."
           />
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Security Vulnerabilities"
+            subTitle="Mitigating Data Breach Risks"
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Conducted Regular Security Audits and Patches
+            To address security vulnerabilities, I conducted frequent security audits to identify potential loopholes. By staying up-to-date with security patches and best practices, we minimized the risk of data breaches and unauthorized access, ensuring data integrity and user trust."
           />
           <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Performance Bottlenecks"
+            subTitle="Resolving Slow API Responses"
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des="Profiled and Optimized Code
+            I identified performance bottlenecks by profiling API endpoints. After pinpointing the inefficient code sections, I refactored and optimized the code to improve response times. This resulted in faster API performance, leading to enhanced overall system efficiency."
           />
         </div>
       </div>
